@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>This is an index page which can send requests to the controller</h2>
+	<!-- use <a> tag or <form> tag to send request to the controller 
+		request will be sent with HTTP methods like GET, POST, PUT, DELETE, <a> tag sends GET request-->
+	<a href = "spring/greet">Welcome</a>
+	<!-- form submission sends request to spring/save with HTTP method POST -->
+	<form action = "spring/save" method = "post">
+		Username <input type = "text" name = "un"> <br />
+		Password <input type = "password" name = "pw"> <br />
+		<input type = "submit" value = "submit">
+	</form>
+	<a href = "spring/search">Search by ID</a>
+	<!-- form submission sends request to spring/save with HTTP method POST -->
+	<form action = "spring/search" method = "post">
+		UserID <input type = "number" name = "uid"> <br />
+		
+		<input type = "submit" value = "Search">
+	</form>
+	<hr />
+	<a href = "spring/list">View All</a>
+	<!-- form submission sends request to spring/save with HTTP method POST -->
+	<form action = "spring/list" method = "post">
+	
+		
+		<input type = "submit" value = "Show All">
+	</form>
+	<hr />
+	<a href = "spring/searchName">Search by Name</a>
+	<!-- form submission sends request to spring/save with HTTP method POST -->
+	<form action = "spring/searchName" method = "post">
+		UserID <input type = "text" name = "uname"> <br />
+		
+		<input type = "submit" value = "Search">
+	</form>
+	<hr />
+</body>
+</html>
